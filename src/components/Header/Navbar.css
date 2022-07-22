@@ -1,0 +1,34 @@
+.container{
+    height: 4rem;
+    background-color: #143b19;
+    /* background-color: #f7f7f7; */
+    max-width: 100%;
+    
+    
+}
+
+.content{
+    display: flex;
+    gap:0rem;
+    justify-content: space-between;
+}
+.container .content .title{
+    font-family: Poppins,sans-serif;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    /* font-size:25px; */
+    font-size: xx-large;
+    /* color: #143b19; */
+    color: #ffffff;
+    padding: 0.8rem 0 0 0.8rem;
+}
+
+.container .content .foodicon{
+   margin-right: 4px;
+}
+
+.image{
+    height: 4rem;
+    width:4rem;
+    margin-top:-0.3rem;
+}

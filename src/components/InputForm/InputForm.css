@@ -1,0 +1,132 @@
+.new-calorie__controls {
+  display: flex; /*flex-direction:row   is by default*/
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  text-align: left;
+}
+
+.new-calorie__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.new-calorie__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  height: 1.5rem;
+  max-width: 100%;
+}
+
+.new-calorie__control input:focus {
+  border: 1px solid #8c959c;
+  box-shadow: 0 0 5px 2px #3d4c5a; /*h-offset v-offset blur spread color*/
+  outline-offset: 0px;
+  outline: none;
+}
+
+.new-calorie__actions {
+  /* margin-right: 2.4rem; */
+  text-align: right;
+}
+
+.new-calorie__actions button {
+  border-radius: 4px;
+  background-color: #143b19;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+}
+
+.new-calorie__actions button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.new-calorie__actions button:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 9px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.new-calorie__actions button:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.new-calorie__actions button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  pointer-events: none;
+}
+
+.total-calorie{
+  float: left;
+  margin: 17.8px  0 0 31px;
+  width: 8em;
+  background-color: rgba(231,226,226,0.5);
+  border-radius: 5px;
+  border: 2px solid rgba(255,244,244,.2);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  /* padding: 1rem 2rem; */
+  padding: 1rem 2rem;
+  
+}
+
+.total-calorie .display-calorie{
+  letter-spacing: 1px;
+  color: black;
+  
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center;
+
+}
+
+.calories-taken-text{
+  text-align: center;
+}
+
+
+@media (max-width:1028px) {
+
+  .new-calorie__controls {
+    gap: 2.5rem;
+  }
+
+  .new-calorie__actions{
+    text-align: center;
+  }
+
+  .total-calorie{
+    margin:20px  0 0 78px;
+    padding: 1rem 2rem;
+  }
+
+  .calories-taken-text{
+    margin-top: 4px;
+  }
+}
